@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hari Parsad Jewellers | Gold &amp; Silver Jewellery, Siddharth Nagar</title>
+<meta name="description" content="Hari Parsad Jewellers, Siddharth Nagar: hallmarked gold, silver and bridal jewellery for 40 years under Shree Hari Parsad Soni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf5e9; --surface:#fffbf2; --text:#3a1218; --muted:#6b4a4e;
+  --maroon:#6d1021; --maroon-d:#4d0a16; --gold:#c99a35; --gold-l:#e8c76e;
+  --gold-t:#86600f; --line:#e4d3ae; --on-maroon:#fbf1da;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#26090f; --surface:#33101a; --text:#f6ecd6; --muted:#d3bd9a;
+    --gold-t:#e8c76e; --line:#5a2a32; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#26090f; --surface:#33101a; --text:#f6ecd6; --muted:#d3bd9a;
+  --gold-t:#e8c76e; --line:#5a2a32; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Mukta","Segoe UI",Tahoma,sans-serif;font-size:1.08rem;line-height:1.65}
+h1,h2,h3{font-family:"Rozha One",Georgia,"Times New Roman",serif;font-weight:400;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:4px;font-weight:700;text-decoration:none;border:2px solid var(--gold);transition:background .2s,color .2s}
+.btn-gold{background:var(--gold);color:#2b0a10}
+.btn-gold:hover{background:var(--gold-l)}
+.btn-line{color:var(--on-maroon);background:transparent}
+.btn-line:hover{background:rgba(232,199,110,.18)}
+.btn-wa{background:#1f7a45;border-color:#1f7a45;color:#fff}
+.btn-wa:hover{background:#176338;border-color:#176338}
+.btn-call{background:var(--maroon);border-color:var(--maroon);color:var(--on-maroon)}
+.btn-call:hover{background:var(--maroon-d)}
+
+/* top bar */
+.top{background:var(--maroon-d);color:var(--on-maroon);font-size:.95rem}
+.top .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-top:.45rem;padding-bottom:.45rem}
+.top a{text-decoration:none;color:var(--gold-l)}
+
+/* hero */
+.hero{background:var(--maroon);color:var(--on-maroon);position:relative;overflow:hidden;border-bottom:6px solid var(--gold)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.16;
+  background:
+   repeating-linear-gradient(45deg,transparent 0 22px,var(--gold-l) 22px 23px),
+   repeating-linear-gradient(-45deg,transparent 0 22px,var(--gold-l) 22px 23px);
+  -webkit-mask-image:linear-gradient(90deg,transparent 30%,#000);mask-image:linear-gradient(90deg,transparent 30%,#000)}
+.hero .wrap{position:relative;padding-top:4.5rem;padding-bottom:4.5rem}
+.hero h1{font-size:clamp(2.6rem,8vw,5.4rem);color:var(--gold-l);max-width:11ch;letter-spacing:.01em}
+.tag{font-size:clamp(1.15rem,2.6vw,1.5rem);margin:1.1rem 0 .4rem;max-width:30ch;line-height:1.4}
+.where{margin:0 0 2rem;color:#e9d7b0}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+
+/* sections */
+section{padding:4rem 0}
+h2{font-size:clamp(1.8rem,4.5vw,2.6rem);color:var(--maroon);margin-bottom:1rem}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:var(--gold-l)}}
+:root[data-theme="dark"] h2{color:var(--gold-l)}
+.lead{max-width:62ch;color:var(--muted)}
+.about{display:grid;gap:2.5rem;grid-template-columns:1fr}
+.founder{border-left:4px solid var(--gold);padding:.4rem 0 .4rem 1.25rem;align-self:start}
+.founder b{font-family:"Rozha One",Georgia,serif;font-weight:400;font-size:1.5rem;display:block;color:var(--gold-t)}
+.founder span{color:var(--muted)}
+@media (min-width:800px){.about{grid-template-columns:1.6fr 1fr;align-items:start}}
+
+/* collections */
+.coll{background:var(--surface);border-block:1px solid var(--line)}
+.cols{display:grid;gap:2.5rem;grid-template-columns:1fr;margin-top:2rem}
+@media (min-width:800px){.cols{grid-template-columns:1fr 1fr}}
+.col h3{font-size:1.7rem;color:var(--gold-t);padding-bottom:.6rem;border-bottom:2px solid var(--gold)}
+.col p{margin:.7rem 0 .6rem;color:var(--muted)}
+.col ul{list-style:none;margin:0;padding:0}
+.col li{padding:.55rem 0;border-bottom:1px solid var(--line)}
+.band{margin-top:2.5rem;padding:1.6rem 1.75rem;background:var(--maroon);color:var(--on-maroon);border-radius:4px;display:grid;gap:.5rem}
+.band h3{color:var(--gold-l);font-size:1.6rem}
+.band p{margin:0;max-width:64ch}
+
+/* trust */
+.trust{display:grid;gap:1.75rem;grid-template-columns:1fr;margin-top:1.5rem}
+@media (min-width:800px){.trust{grid-template-columns:repeat(3,1fr)}}
+.trust h3{font-size:1.35rem;color:var(--maroon);margin-bottom:.35rem}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .trust h3{color:var(--gold-l)}}
+:root[data-theme="dark"] .trust h3{color:var(--gold-l)}
+.trust p{margin:0;color:var(--muted)}
+.rates{margin-top:2.5rem;padding:1.1rem 1.4rem;border:1px dashed var(--gold);border-radius:4px;color:var(--muted)}
+.rates b{color:var(--text)}
+
+/* contact */
+.contact{background:var(--maroon);color:var(--on-maroon)}
+.contact h2{color:var(--gold-l)}
+.contact .lead{color:#e9d7b0}
+.grid2{display:grid;gap:2.5rem;grid-template-columns:1fr;margin-top:2rem}
+@media (min-width:860px){.grid2{grid-template-columns:1.2fr 1fr}}
+.num{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem 1rem;padding:.9rem 0;border-bottom:1px solid rgba(232,199,110,.35)}
+.num strong{font-size:1.45rem;letter-spacing:.04em;min-width:9ch;font-family:"Rozha One",Georgia,serif;font-weight:400}
+.num .btn{padding:.45rem 1rem}
+.info h3{color:var(--gold-l);font-size:1.3rem;margin:0 0 .3rem}
+.info p{margin:0 0 1.4rem}
+.info a{color:var(--gold-l)}
+table{border-collapse:collapse}
+td{padding:.15rem 1.5rem .15rem 0}
+.small{font-size:.92rem;color:#e9d7b0}
+footer{background:var(--maroon-d);color:#e9d7b0;text-align:center;padding:1.5rem 1.25rem;font-size:.95rem}
+footer b{color:var(--gold-l);font-weight:500}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <span>Unchdeeh Hall Chouraha, Kateswar Nath Road, Siddharth Nagar</span>
+  <a href="tel:+919838168715">Call 98381 68715</a>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <h1>Hari Parsad Jewellers</h1>
+  <p class="tag">40 Years of Trust, Purity, Quality and Tradition</p>
+  <p class="where">Gold &amp; silver jewellery in Siddharth Nagar, Uttar Pradesh</p>
+  <div class="cta">
+    <a class="btn btn-gold" href="tel:+919838168715">Call now</a>
+    <a class="btn btn-line" href="https://wa.me/919838168715?text=Namaste%2C%20I%20would%20like%20to%20know%20about%20your%20jewellery." target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <a class="btn btn-line" href="#contact">Find the shop</a>
+  </div>
+</div></header>
+
+<main>
+<section id="about"><div class="wrap about">
+  <div>
+    <h2>Forty years of serving families</h2>
+    <p class="lead">Hari Parsad Jewellers has served customers in Siddharth Nagar for about 40 years. It is a traditional jewellery business built on customer trust, purity, quality and personal service, from the first ring to a full wedding set.</p>
+    <p class="lead">Every piece is chosen and explained with care, so you know what you are buying and why it is worth keeping.</p>
+  </div>
+  <div class="founder">
+    <b>Shree Hari Parsad Soni</b>
+    <span>Owner, who has led the shop since it opened its doors.</span>
+  </div>
+</div></section>
+
+<section id="collections" class="coll"><div class="wrap">
+  <h2>Our collections</h2>
+  <p class="lead">Visit the shop or message us on WhatsApp to see current designs. Prices depend on weight, purity and the day’s rate.</p>
+  <div class="cols">
+    <div class="col">
+      <h3>Gold jewellery</h3>
+      <p>Hallmarked gold, priced by weight, purity and the daily gold rate.</p>
+      <ul>
+        <li>Rings</li><li>Necklaces</li><li>Earrings</li><li>Mangalsutras</li><li>Bangles</li><li>Bridal jewellery</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Silver jewellery</h3>
+      <p>Quality silver ornaments, priced by weight and purity.</p>
+      <ul>
+        <li>Anklets</li><li>Toe rings</li><li>Silver chains</li><li>Bracelets</li><li>Traditional silver ornaments</li>
+      </ul>
+    </div>
+  </div>
+  <div class="band">
+    <h3>Bridal sets and festive jewellery</h3>
+    <p>Bridal jewellery sets and traditional Indian gold and silver ornaments for weddings, festivals and special occasions. Come early, so we can show you the full range and help you plan.</p>
+  </div>
+</div></section>
+
+<section id="trust"><div class="wrap">
+  <h2>Why families return</h2>
+  <div class="trust">
+    <div><h3>Purity you can ask about</h3><p>We sell hallmarked gold jewellery and quality silver ornaments, and we are glad to explain what you are paying for.</p></div>
+    <div><h3>Personal service</h3><p>You deal with people who know the shop and its craft, not a counter script.</p></div>
+    <div><h3>Tradition, 40 years deep</h3><p>Designs for the occasions that matter: weddings, festivals and family milestones.</p></div>
+  </div>
+  <p class="rates"><b>Today’s gold and silver rates:</b> rates change every day. Call or message us for the current rate before you visit.</p>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Visit or contact us</h2>
+  <p class="lead">Call or message any of our three numbers. We reply on WhatsApp too.</p>
+  <div class="grid2">
+    <div>
+      <div class="num"><strong>98381 68715</strong>
+        <a class="btn btn-gold" href="tel:+919838168715">Call</a>
+        <a class="btn btn-wa" href="https://wa.me/919838168715" target="_blank" rel="noopener">WhatsApp</a></div>
+      <div class="num"><strong>99191 43255</strong>
+        <a class="btn btn-gold" href="tel:+919919143255">Call</a>
+        <a class="btn btn-wa" href="https://wa.me/919919143255" target="_blank" rel="noopener">WhatsApp</a></div>
+      <div class="num"><strong>99844 43331</strong>
+        <a class="btn btn-gold" href="tel:+919984443331">Call</a>
+        <a class="btn btn-wa" href="https://wa.me/919984443331" target="_blank" rel="noopener">WhatsApp</a></div>
+    </div>
+    <div class="info">
+      <h3>Shop address</h3>
+      <p>Hari Parsad Jewellers<br>Unchdeeh Hall Chouraha, Kateswar Nath Road<br>Siddharth Nagar, Uttar Pradesh, India<br>
+      <a class="btn btn-gold" style="margin-top:.8rem;color:#2b0a10" href="https://www.google.com/maps/search/?api=1&query=Hari+Parsad+Jewellers+Unchdeeh+Hall+Chouraha+Kateswar+Nath+Road+Siddharth+Nagar+Uttar+Pradesh" target="_blank" rel="noopener">Open in Google Maps</a></p>
+      <h3>Email</h3>
+      <p><a href="mailto:hariparsadjewellers@gmail.com">hariparsadjewellers@gmail.com</a></p>
+      <h3>Shop hours</h3>
+      <table>
+        <tr><td>Monday to Saturday</td><td>10:00 AM to 8:00 PM</td></tr>
+        <tr><td>Sunday</td><td>10:00 AM to 6:00 PM</td></tr>
+      </table>
+      <p class="small" style="margin-top:.6rem">Timings can change on festival days. Please call to confirm.</p>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer>
+  <b>Hari Parsad Jewellers</b>, Siddharth Nagar, Uttar Pradesh<br>
+  Owner: Shree Hari Parsad Soni. Gold and silver jewellery for 40 years.
+</footer>
+</body>
+</html>
